@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1b2a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://i.pinimg.com/originals/df/c9/ee/dfc9ee6cabb21f48d3bbbfe306a8e517.jpg');
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Yarı saydam siyah arka plan */
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .profile h1 {
+            margin: 10px 0;
+        }
+        .links {
+            list-style: none;
+            padding: 0;
+        }
+        .links li {
+            margin: 10px 0;
+        }
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: background 0.3s, color 0.3s;
+            width: 250px; /* Butonların genişliğini eşitle */
+            text-align: left; /* Metni sola hizala */
+        }
+        .links a:hover {
+            background: #fff;
+            color: #0d1b2a;
+        }
+        .links a span {
+            margin-right: 10px; /* Emoji ile metin arasına boşluk ekle */
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            height: 60px; /* Footer yüksekliğini artır */
+            background: rgba(0, 0, 0, 0.8); /* Yarı saydam arka plan */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .footer p {
+            margin: 0;
+            font-size: 38px; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="profile">
+            <img src="https://cdn.discordapp.com/avatars/1091415573990219806/7e77589077f909ded9d473642210f5e4.webp?size=1024" alt="Profile Picture">
+            <h1>Akemi</h1>
+        </div>
+        <ul class="links">
+            <li><a href="https://github.com/akemi1tr" target="_blank"><span>🐱‍💻</span>GitHub @ akemi1tr</a></li>
+            <li><a href="https://discord.com/users/1091415573990219806" target="_blank"><span>💬</span>Discord @ 'Akemi</a></li>
+            <li><a href="https://www.instagram.com/akemi0734/" target="_blank"><span>📸</span>Instagram @ Akemi</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>Bakımda</p>
+    </div>
+</body>
+</html>
